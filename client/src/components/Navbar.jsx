@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ user }) => {
   const logout = () => {
-    window.open("https://my-quiz0.herokuapp.com/auth/logout", "_self");
+    window.open(process.env.SITE+"/auth/logout", "_self");
   };
   return (
     <div className="navbar">

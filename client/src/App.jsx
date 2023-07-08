@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     const getUser = () => {
-      fetch("https://my-quiz0.herokuapp.com/auth/login/success", {
+      fetch(process.env.SITE+"/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {

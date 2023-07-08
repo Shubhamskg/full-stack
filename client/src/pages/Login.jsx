@@ -4,15 +4,15 @@ import Github from "../img/github.png";
 
 const Login = () => {
   const google = () => {
-    window.open("https://my-quiz0.herokuapp.com/auth/google", "_self");
+    window.open(process.env.SITE+"/auth/google", "_self");
   };
 
   const github = () => {
-    window.open("https://my-quiz0.herokuapp.com/auth/github", "_self");
+    window.open(process.env.SITE+"/auth/github", "_self");
   };
 
   const facebook = () => {
-    window.open("https://my-quiz0.herokuapp.com/auth/facebook", "_self");
+    window.open(process.env.SITE+"/auth/facebook", "_self");
   };
 
   return (
